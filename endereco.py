@@ -40,7 +40,7 @@ def dados_cooler_lista(dados_os):
 
     sleep(2)
 
-    navegador.get('https://www.sistema.takeandgoapp.com/refrigerator/list?page=0')
+    navegador.get('https://www.sistema/page=0.com')
 
     funcao_xpath('/html/body/div[1]/div[2]/div[2]/div[1]/div[2]/button[2]', C='C')
     
