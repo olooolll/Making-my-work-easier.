@@ -22,7 +22,7 @@ def dados_cooler_lista(dados_os):
     navegador = webdriver.Firefox(options=options)
 
 
-    url = navegador.get('https://www.sistema.takeandgoapp.com/refrigerator/list?page=0&limit=25&column=order&sort=DESC')
+    url = navegador.get('https://www.sistema.com')
 
     def funcao_xpath(X, SK=None, E=None, C=None, S=None):
         if E == 'E':
@@ -35,8 +35,8 @@ def dados_cooler_lista(dados_os):
             xpath = navegador.find_element(By.XPATH, X).send_keys(SK)    
         return xpath
 
-    funcao_xpath('//*[@id=":r0:"]', SK='53512009883')
-    funcao_xpath('//*[@id=":r1:"]', SK='152535', E='E')
+    funcao_xpath('//*[@id=":r0:"]', SK='')
+    funcao_xpath('//*[@id=":r1:"]', SK='', E='E')
 
     sleep(2)
 
